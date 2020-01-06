@@ -5,14 +5,7 @@
    state: present
    update_cache: yes 
    name: 
-    - php7.4.1-cli.amzn2.0.2.x86_64
-    - php7.4.1-gd.amzn2.0.2.x86_64
-    - php7.4.1-imap.amzn2.0.2.x86_64
-    - php7.4.1-mbstring.amzn2.0.2.x86_64
-    - php7.4.1-mysqlnd.amzn2.0.2.x86_64
-    - php7.4.1-opcache.amzn2.0.2.x86_64
-    - php7.4.1-pdo.amzn2.0.2.x86_64
-    - php7.4.1-pecl-apcu.amzn2.0.2.x86_64
+    - php
   notify: restart Apache
 - name: upload index.php file to the remote web directory
   copy:
